@@ -1,0 +1,336 @@
+HTML5 Input 类型
+
+HTML5 新的 Input 类型
+HTML5 拥有多个新的表单输入类型。这些新特性提供了更好的输入控制和验证。
+
+本章全面介绍这些新的输入类型：
+
+email
+url
+number
+range
+Date pickers (date, month, week, time, datetime, datetime-local)
+search
+color
+浏览器支持
+Input type	IE	Firefox	Opera	Chrome	Safari
+email	No	4.0	9.0	10.0	No
+url	No	4.0	9.0	10.0	No
+number	No	No	9.0	7.0	No
+range	No	No	9.0	4.0	4.0
+Date pickers	No	No	9.0	10.0	No
+search	No	4.0	11.0	10.0	No
+color	No	No	11.0	No	No
+注释：Opera 对新的输入类型的支持最好。不过您已经可以在所有主流的浏览器中使用它们了。即使不被支持，仍然可以显示为常规的文本域。
+
+Input 类型 - email
+email 类型用于应该包含 e-mail 地址的输入域。
+
+在提交表单时，会自动验证 email 域的值。
+
+实例
+E-mail: <input type="email" name="user_email" />
+
+提示：iPhone 中的 Safari 浏览器支持 email 输入类型，并通过改变触摸屏键盘来配合它（添加 @ 和 .com 选项）。
+
+Input 类型 - url
+url 类型用于应该包含 URL 地址的输入域。
+
+在提交表单时，会自动验证 url 域的值。
+
+实例
+Homepage: <input type="url" name="user_url" />
+
+提示：iPhone 中的 Safari 浏览器支持 url 输入类型，并通过改变触摸屏键盘来配合它（添加 .com 选项）。
+
+Input 类型 - number
+number 类型用于应该包含数值的输入域。
+
+您还能够设定对所接受的数字的限定：
+
+实例
+Points: <input type="number" name="points" min="1" max="10" />
+
+请使用下面的属性来规定对数字类型的限定：
+
+属性	值	描述
+max	number	规定允许的最大值
+min	number	规定允许的最小值
+step	number	规定合法的数字间隔（如果 step="3"，则合法的数是 -3,0,3,6 等）
+value	number	规定默认值
+请试一下带有所有限定属性的例子：亲自试一试
+
+提示：iPhone 中的 Safari 浏览器支持 number 输入类型，并通过改变触摸屏键盘来配合它（显示数字）。
+
+Input 类型 - range
+range 类型用于应该包含一定范围内数字值的输入域。
+
+range 类型显示为滑动条。
+
+您还能够设定对所接受的数字的限定：
+
+实例
+<input type="range" name="points" min="1" max="10" />
+
+请使用下面的属性来规定对数字类型的限定：
+
+属性	值	描述
+max	number	规定允许的最大值
+min	number	规定允许的最小值
+step	number	规定合法的数字间隔（如果 step="3"，则合法的数是 -3,0,3,6 等）
+value	number	规定默认值
+Input 类型 - Date Pickers（日期选择器）
+HTML5 拥有多个可供选取日期和时间的新输入类型：
+
+date - 选取日、月、年
+month - 选取月、年
+week - 选取周和年
+time - 选取时间（小时和分钟）
+datetime - 选取时间、日、月、年（UTC 时间）
+datetime-local - 选取时间、日、月、年（本地时间）
+下面的例子允许您从日历中选取一个日期：
+
+实例
+Date: <input type="date" name="user_date" />
+
+
+
+HTML5 表单元素
+
+HTML5 的新的表单元素：
+HTML5 拥有若干涉及表单的元素和属性。
+
+本章介绍以下新的表单元素：
+
+datalist
+keygen
+output
+浏览器支持
+Input type	IE	Firefox	Opera	Chrome	Safari
+datalist	No	No	9.5	No	No
+keygen	No	No	10.5	3.0	No
+output	No	No	9.5	No	No
+datalist 元素
+datalist 元素规定输入域的选项列表。
+
+列表是通过 datalist 内的 option 元素创建的。
+
+如需把 datalist 绑定到输入域，请用输入域的 list 属性引用 datalist 的 id：
+
+实例
+Webpage: <input type="url" list="url_list" name="link" />
+<datalist id="url_list">
+<option label="W3School" value="http://www.W3School.com.cn" />
+<option label="Google" value="http://www.google.com" />
+<option label="Microsoft" value="http://www.microsoft.com" />
+</datalist>
+提示：option 元素永远都要设置 value 属性。
+
+keygen 元素
+keygen 元素的作用是提供一种验证用户的可靠方法。
+
+keygen 元素是密钥对生成器（key-pair generator）。当提交表单时，会生成两个键，一个是私钥，一个公钥。
+
+私钥（private key）存储于客户端，公钥（public key）则被发送到服务器。公钥可用于之后验证用户的客户端证书（client certificate）。
+
+目前，浏览器对此元素的糟糕的支持度不足以使其成为一种有用的安全标准。
+
+实例
+<form action="demo_form.asp" method="get">
+Username: <input type="text" name="usr_name" />
+Encryption: <keygen name="security" />
+<input type="submit" />
+</form>
+
+output 元素
+output 元素用于不同类型的输出，比如计算或脚本输出：
+
+实例
+<output id="result" onforminput="resCalc()"></output>
+
+
+
+HTML5 表单属性
+
+HTML5 的新的表单属性
+本章讲解涉及 <form> 和 <input> 元素的新属性。
+
+新的 form 属性：
+autocomplete
+novalidate
+新的 input 属性：
+autocomplete
+autofocus
+form
+form overrides (formaction, formenctype, formmethod, formnovalidate, formtarget)
+height 和 width
+list
+min, max 和 step
+multiple
+pattern (regexp)
+placeholder
+required
+浏览器支持
+Input type	IE	Firefox	Opera	Chrome	Safari
+autocomplete	8.0	3.5	9.5	3.0	4.0
+autofocus	No	No	10.0	3.0	4.0
+form	No	No	9.5	No	No
+form overrides	No	No	10.5	No	No
+height and width	8.0	3.5	9.5	3.0	4.0
+list	No	No	9.5	No	No
+min, max and step	No	No	9.5	3.0	No
+multiple	No	3.5	No	3.0	4.0
+novalidate	No	No	No	No	No
+pattern	No	No	9.5	3.0	No
+placeholder	No	No	No	3.0	3.0
+required	No	No	9.5	3.0	No
+autocomplete 属性
+autocomplete 属性规定 form 或 input 域应该拥有自动完成功能。
+
+注释：autocomplete 适用于 <form> 标签，以及以下类型的 <input> 标签：text, search, url, telephone, email, password, datepickers, range 以及 color。
+
+当用户在自动完成域中开始输入时，浏览器应该在该域中显示填写的选项：
+
+实例
+<form action="demo_form.asp" method="get" autocomplete="on">
+First name: <input type="text" name="fname" /><br />
+Last name: <input type="text" name="lname" /><br />
+E-mail: <input type="email" name="email" autocomplete="off" /><br />
+<input type="submit" />
+</form>
+
+注释：在某些浏览器中，您可能需要启用自动完成功能，以使该属性生效。
+
+autofocus 属性
+autofocus 属性规定在页面加载时，域自动地获得焦点。
+
+注释：autofocus 属性适用于所有 <input> 标签的类型。
+
+实例
+User name: <input type="text" name="user_name"  autofocus="autofocus" />
+
+form 属性
+form 属性规定输入域所属的一个或多个表单。
+
+注释：form 属性适用于所有 <input> 标签的类型。
+
+form 属性必须引用所属表单的 id：
+
+实例
+<form action="demo_form.asp" method="get" id="user_form">
+First name:<input type="text" name="fname" />
+<input type="submit" />
+</form>
+Last name: <input type="text" name="lname" form="user_form" />
+注释：如需引用一个以上的表单，请使用空格分隔的列表。
+
+表单重写属性
+表单重写属性（form override attributes）允许您重写 form 元素的某些属性设定。
+
+表单重写属性有：
+
+formaction - 重写表单的 action 属性
+formenctype - 重写表单的 enctype 属性
+formmethod - 重写表单的 method 属性
+formnovalidate - 重写表单的 novalidate 属性
+formtarget - 重写表单的 target 属性
+注释：表单重写属性适用于以下类型的 <input> 标签：submit 和 image。
+
+实例
+<form action="demo_form.asp" method="get" id="user_form">
+E-mail: <input type="email" name="userid" /><br />
+<input type="submit" value="Submit" />
+<br />
+<input type="submit" formaction="demo_admin.asp" value="Submit as admin" />
+<br />
+<input type="submit" formnovalidate="true" value="Submit without validation" />
+<br />
+</form>
+注释：这些属性对于创建不同的提交按钮很有帮助。
+
+height 和 width 属性
+height 和 width 属性规定用于 image 类型的 input 标签的图像高度和宽度。
+
+注释：height 和 width 属性只适用于 image 类型的 <input> 标签。
+
+实例
+<input type="image" src="img_submit.gif" width="99" height="99" />
+
+list 属性
+list 属性规定输入域的 datalist。datalist 是输入域的选项列表。
+
+注释：list 属性适用于以下类型的 <input> 标签：text, search, url, telephone, email, date pickers, number, range 以及 color。
+
+实例
+Webpage: <input type="url" list="url_list" name="link" />
+<datalist id="url_list">
+<option label="W3Schools" value="http://www.w3school.com.cn" />
+<option label="Google" value="http://www.google.com" />
+<option label="Microsoft" value="http://www.microsoft.com" />
+</datalist>
+
+min、max 和 step 属性
+min、max 和 step 属性用于为包含数字或日期的 input 类型规定限定（约束）。
+
+max 属性规定输入域所允许的最大值。
+
+min 属性规定输入域所允许的最小值。
+
+step 属性为输入域规定合法的数字间隔（如果 step="3"，则合法的数是 -3,0,3,6 等）。
+
+注释：min、max 和 step 属性适用于以下类型的 <input> 标签：date pickers、number 以及 range。
+
+下面的例子显示一个数字域，该域接受介于 0 到 10 之间的值，且步进为 3（即合法的值为 0、3、6 和 9）：
+
+实例
+Points: <input type="number" name="points" min="0" max="10" step="3" />
+
+multiple 属性
+multiple 属性规定输入域中可选择多个值。
+
+注释：multiple 属性适用于以下类型的 <input> 标签：email 和 file。
+
+实例
+Select images: <input type="file" name="img" multiple="multiple" />
+
+novalidate 属性
+novalidate 属性规定在提交表单时不应该验证 form 或 input 域。
+
+注释：novalidate 属性适用于 <form> 以及以下类型的 <input> 标签：text, search, url, telephone, email, password, date pickers, range 以及 color.
+
+实例
+<form action="demo_form.asp" method="get" novalidate="true">
+E-mail: <input type="email" name="user_email" />
+<input type="submit" />
+</form>
+
+pattern 属性
+pattern 属性规定用于验证 input 域的模式（pattern）。
+
+模式（pattern） 是正则表达式。您可以在我们的 JavaScript 教程中学习到有关正则表达式的内容。
+
+注释：pattern 属性适用于以下类型的 <input> 标签：text, search, url, telephone, email 以及 password。
+
+下面的例子显示了一个只能包含三个字母的文本域（不含数字及特殊字符）：
+
+实例
+Country code: <input type="text" name="country_code"
+pattern="[A-z]{3}" title="Three letter country code" />
+
+placeholder 属性
+placeholder 属性提供一种提示（hint），描述输入域所期待的值。
+
+注释：placeholder 属性适用于以下类型的 <input> 标签：text, search, url, telephone, email 以及 password。
+
+提示（hint）会在输入域为空时显示出现，会在输入域获得焦点时消失：
+
+实例
+<input type="search" name="user_search"  placeholder="Search W3School" />
+
+required 属性
+required 属性规定必须在提交之前填写输入域（不能为空）。
+
+注释：required 属性适用于以下类型的 <input> 标签：text, search, url, telephone, email, password, date pickers, number, checkbox, radio 以及 file。
+
+实例
+Name: <input type="text" name="usr_name" required="required" />
