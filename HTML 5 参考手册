@@ -1,0 +1,604 @@
+HTML 5
+通过制定如何处理所有 HTML 元素以及如何从错误中恢复的精确规则，HTML 5 改进了互操作性，并减少了开发成本。
+
+HTML 5 中的新特性包括了嵌入音频、视频和图形的功能，客户端数据存储，以及交互式文档。
+
+HTML 5 还包含了新的元素，比如：<nav>, <header>, <footer> 以及 <figure> 等等。
+
+HTML 5 工作组包括：AOL, Apple, Google, IBM, Microsoft, Mozilla, Nokia, Opera, 以及数百个其他的供应商。
+
+注释：HTML 5 还没有成为 W3C 正式的推荐标准。
+
+如需阅读更多有关 W3C HTML 5 活动的内容，请阅读我们的 W3C 教程。
+
+按字母顺序排列的标签列表
+new : HTML5 中的新标签。
+
+标签	描述
+<!--...-->	定义注释。
+<!DOCTYPE> 	定义文档类型。
+<a>	定义超链接。
+<abbr>	定义缩写。
+<acronym>	HTML 5 中不支持。定义首字母缩写。
+<address>	定义地址元素。
+<applet>	HTML 5 中不支持。定义 applet。
+<area>	定义图像映射中的区域。
+<article>	定义 article。
+<aside>	定义页面内容之外的内容。
+<audio>	定义声音内容。
+<b>	定义粗体文本。
+<base>	定义页面中所有链接的基准 URL。
+<basefont>	HTML 5 中不支持。请使用 CSS 代替。
+<bdi>	定义文本的文本方向，使其脱离其周围文本的方向设置。
+<bdo>	定义文本显示的方向。
+<big>	HTML 5 中不支持。定义大号文本。
+<blockquote>	定义长的引用。
+<body>	定义 body 元素。
+<br>	插入换行符。
+<button>	定义按钮。
+<canvas>	定义图形。
+<caption>	定义表格标题。
+<center>	HTML 5 中不支持。定义居中的文本。
+<cite>	定义引用。
+<code>	定义计算机代码文本。
+<col>	定义表格列的属性。
+<colgroup>	定义表格列的分组。
+<command>	定义命令按钮。
+<datalist>	定义下拉列表。
+<dd>	定义定义的描述。
+<del>	定义删除文本。
+<details>	定义元素的细节。
+<dfn>	定义定义项目。
+<dir>	HTML 5 中不支持。定义目录列表。
+<div>	定义文档中的一个部分。
+<dl>	定义定义列表。
+<dt>	定义定义的项目。
+<em>	定义强调文本。
+<embed>	定义外部交互内容或插件。
+<fieldset>	定义 fieldset。
+<figcaption>	定义 figure 元素的标题。
+<figure>	定义媒介内容的分组，以及它们的标题。
+<font>	HTML 5 中不支持。
+<footer>	定义 section 或 page 的页脚。
+<form>	定义表单。
+<frame>	HTML 5 中不支持。定义子窗口（框架）。
+<frameset>	HTML 5 中不支持。定义框架的集。
+<h1> to <h6>	定义标题 1 到标题 6。
+<head>	定义关于文档的信息。
+<header>	定义 section 或 page 的页眉。
+<hgroup>	定义有关文档中的 section 的信息。
+<hr>	定义水平线。
+<html>	定义 html 文档。
+<i>	定义斜体文本。
+<iframe>	定义行内的子窗口（框架）。
+<img>	定义图像。
+<input>	定义输入域。
+<ins>	定义插入文本。
+<keygen>	定义生成密钥。
+<isindex>	HTML 5 中不支持。定义单行的输入域。
+<kbd>	定义键盘文本。
+<label>	定义表单控件的标注。
+<legend>	定义 fieldset 中的标题。
+<li>	定义列表的项目。
+<link>	定义资源引用。
+<map>	定义图像映射。
+<mark>	定义有记号的文本。
+<menu>	定义菜单列表。
+<meta>	定义元信息。
+<meter>	定义预定义范围内的度量。
+<nav>	定义导航链接。
+<noframes>	HTML 5 中不支持。定义 noframe 部分。
+<noscript>	定义 noscript 部分。
+<object>	定义嵌入对象。
+<ol>	定义有序列表。
+<optgroup>	定义选项组。
+<option>	定义下拉列表中的选项。
+<output>	定义输出的一些类型。
+<p>	定义段落。
+<param>	为对象定义参数。
+<pre>	定义预格式化文本。
+<progress>	定义任何类型的任务的进度。
+<q>	定义短的引用。
+<rp>	定义若浏览器不支持 ruby 元素显示的内容。
+<rt>	定义 ruby 注释的解释。
+<ruby>	定义 ruby 注释。
+<s>	HTML 5 中不支持。定义加删除线的文本。
+<samp>	定义样本计算机代码。
+<script>	定义脚本。
+<section>	定义 section。
+<select>	定义可选列表。
+<small>	将旁注 (side comments) 呈现为小型文本。
+<source>	定义媒介源。
+<span>	定义文档中的 section。
+<strike>	HTML 5 中不支持。定义加删除线的文本。
+<strong>	定义强调文本。
+<style>	定义样式定义。
+<sub>	定义下标文本。
+<summary>	定义 details 元素的标题。
+<sup>	定义上标文本。
+<table>	定义表格。
+<tbody>	定义表格的主体。
+<td>	定义表格单元。
+<textarea>	定义 textarea。
+<tfoot>	定义表格的脚注。
+<th>	定义表头。
+<thead>	定义表头。
+<time>	定义日期/时间。
+<title>	定义文档的标题。
+<tr>	定义表格行。
+<track>	定义用在媒体播放器中的文本轨道。
+<tt>	HTML 5 中不支持。定义打字机文本。
+<u>	HTML 5 中不支持。定义下划线文本。
+<ul>	定义无序列表。
+<var>	定义变量。
+<video>	定义视频。
+<xmp>	HTML 5 中不支持。定义预格式文本。
+
+
+
+HTML 5 标准属性
+
+所有 HTML 5 标签均支持下面列出的属性，仅有少数例外。
+
+HTML 5 标准属性
+NEW：HTML 5 中新的标准属性。
+
+注释：HTML 4.01 不再支持 accesskey 属性：
+
+属性	值	描述
+accesskey	character	规定访问元素的键盘快捷键
+class	classname	规定元素的类名（用于规定样式表中的类）。
+contenteditable	
+true
+false
+规定是否允许用户编辑内容。
+contextmenu	menu_id	规定元素的上下文菜单。
+data-yourvalue	value	
+创作者定义的属性。
+
+HTML 文档的创作者可以定义他们自己的属性。
+
+必须以 "data-" 开头。
+
+dir	
+ltr
+rtl
+规定元素中内容的文本方向。
+draggable	
+true
+false
+auto
+规定是否允许用户拖动元素。
+hidden	hidden	规定该元素是无关的。被隐藏的元素不会显示。
+id	id	规定元素的唯一 ID。
+item	
+empty
+url
+用于组合元素。
+itemprop	
+url
+group value
+用于组合项目。
+lang	language_code	规定元素中内容的语言代码。语言代码参考手册。
+spellcheck	
+true
+false
+规定是否必须对元素进行拼写或语法检查。
+style	style_definition	规定元素的行内样式。
+subject	id	规定元素对应的项目。
+tabindex	number	规定元素的 tab 键控制次序。
+title	text	规定有关元素的额外信息。
+
+HTML 5 事件属性
+
+全局事件属性
+HTML 4 增加了通过事件触发浏览器中行为的能力，比如当用户点击某个元素时启动一段 JavaScript。
+
+如果需要学习更多有关使用这些事件进行编程的内容，请学习我们的 JavaScript 教程 和 DHTML 教程。
+
+下面的表格列出了可插入 HTML 5 元素中以定义事件行为的标准事件属性。
+
+Window 事件属性 - Window Event Attributes
+表单事件 - Form Events
+键盘事件 - Keybord Events
+鼠标事件 - Mouse Events
+媒介事件 - Media Events
+new：HTML 5 中的新的事件属性。
+
+Window 事件属性
+window 对象触发的事件。
+
+适用于 <body> 标签：
+
+属性	值	描述
+onafterprint	script	在打印文档之后运行脚本
+onbeforeprint	script	在文档打印之前运行脚本
+onbeforeonload	script	在文档加载之前运行脚本
+onblur	script	当窗口失去焦点时运行脚本
+onerror	script	当错误发生时运行脚本
+onfocus	script	当窗口获得焦点时运行脚本
+onhaschange	script	当文档改变时运行脚本
+onload	script	当文档加载时运行脚本
+onmessage	script	当触发消息时运行脚本
+onoffline	script	当文档离线时运行脚本
+ononline	script	当文档上线时运行脚本
+onpagehide	script	当窗口隐藏时运行脚本
+onpageshow	script	当窗口可见时运行脚本
+onpopstate	script	当窗口历史记录改变时运行脚本
+onredo	script	当文档执行再执行操作（redo）时运行脚本
+onresize	script	当调整窗口大小时运行脚本
+onstorage	script	当文档加载加载时运行脚本
+onundo	script	当 Web Storage 区域更新时（存储空间中的数据发生变化时）
+onunload	script	当用户离开文档时运行脚本
+表单事件
+由 HTML 表单内部的动作触发的事件。
+
+适用于所有 HTML 5 元素，不过最常用于表单元素中：
+
+属性	值	描述
+onblur	script	当元素失去焦点时运行脚本
+onchange	script	当元素改变时运行脚本
+oncontextmenu	script	当触发上下文菜单时运行脚本
+onfocus	script	当元素获得焦点时运行脚本
+onformchange	script	当表单改变时运行脚本
+onforminput	script	当表单获得用户输入时运行脚本
+oninput	script	当元素获得用户输入时运行脚本
+oninvalid	script	当元素无效时运行脚本
+onreset	script	当表单重置时运行脚本。HTML 5 不支持。
+onselect	script	当选取元素时运行脚本
+onsubmit	script	当提交表单时运行脚本
+键盘事件
+由键盘触发的事件。
+
+适用于所有 HTML 5 元素：
+
+属性	值	描述
+onkeydown	script	当按下按键时运行脚本
+onkeypress	script	当按下并松开按键时运行脚本
+onkeyup	script	当松开按键时运行脚本
+鼠标事件
+由鼠标或相似的用户动作触发的事件。
+
+适用于所有 HTML 5 元素：
+
+属性	值	描述
+onclick	script	当单击鼠标时运行脚本
+ondblclick	script	当双击鼠标时运行脚本
+ondrag	script	当拖动元素时运行脚本
+ondragend	script	当拖动操作结束时运行脚本
+ondragenter	script	当元素被拖动至有效的拖放目标时运行脚本
+ondragleave	script	当元素离开有效拖放目标时运行脚本
+ondragover	script	当元素被拖动至有效拖放目标上方时运行脚本
+ondragstart	script	当拖动操作开始时运行脚本
+ondrop	script	当被拖动元素正在被拖放时运行脚本
+onmousedown	script	当按下鼠标按钮时运行脚本
+onmousemove	script	当鼠标指针移动时运行脚本
+onmouseout	script	当鼠标指针移出元素时运行脚本
+onmouseover	script	当鼠标指针移至元素之上时运行脚本
+onmouseup	script	当松开鼠标按钮时运行脚本
+onmousewheel	script	当转动鼠标滚轮时运行脚本
+onscroll	script	当滚动元素滚动元素的滚动条时运行脚本
+媒介事件
+由视频、图像以及音频等媒介触发的事件。
+
+适用于所有 HTML 5 元素，不过在媒介元素（诸如 audio、embed、img、object 以及 video）中最常用：
+
+属性	值	描述
+onabort	script	当发生中止事件时运行脚本
+oncanplay	script	当媒介能够开始播放但可能因缓冲而需要停止时运行脚本
+oncanplaythrough	script	当媒介能够无需因缓冲而停止即可播放至结尾时运行脚本
+ondurationchange	script	当媒介长度改变时运行脚本
+onemptied	script	当媒介资源元素突然为空时（网络错误、加载错误等）运行脚本
+onended	script	当媒介已抵达结尾时运行脚本
+onerror	script	当在元素加载期间发生错误时运行脚本
+onloadeddata	script	当加载媒介数据时运行脚本
+onloadedmetadata	script	当媒介元素的持续时间以及其他媒介数据已加载时运行脚本
+onloadstart	script	当浏览器开始加载媒介数据时运行脚本
+onpause	script	当媒介数据暂停时运行脚本
+onplay	script	当媒介数据将要开始播放时运行脚本
+onplaying	script	当媒介数据已开始播放时运行脚本
+onprogress	script	当浏览器正在取媒介数据时运行脚本
+onratechange	script	当媒介数据的播放速率改变时运行脚本
+onreadystatechange	script	当就绪状态（ready-state）改变时运行脚本
+onseeked	script	当媒介元素的定位属性 [1] 不再为真且定位已结束时运行脚本
+onseeking	script	当媒介元素的定位属性为真且定位已开始时运行脚本
+onstalled	script	当取回媒介数据过程中（延迟）存在错误时运行脚本
+onsuspend	script	当浏览器已在取媒介数据但在取回整个媒介文件之前停止时运行脚本
+ontimeupdate	script	当媒介改变其播放位置时运行脚本
+onvolumechange	script	当媒介改变音量亦或当音量被设置为静音时运行脚本
+onwaiting	script	当媒介已停止播放但打算继续播放时运行脚本
+[1]：定位属性的英文译文是：seeking attribute。
+
+
+
+HTML 5 视频/音频参考手册
+
+HTML5 视频和音频的 DOM 参考手册
+HTML5 DOM 为 <audio> 和 <video> 元素提供了方法、属性和事件。
+
+这些方法、属性和事件允许您使用 JavaScript 来操作 <audio> 和 <video> 元素。
+
+HTML5 Audio/Video 方法
+方法	描述
+addTextTrack()	向音频/视频添加新的文本轨道
+canPlayType()	检测浏览器是否能播放指定的音频/视频类型
+load()	重新加载音频/视频元素
+play()	开始播放音频/视频
+pause()	暂停当前播放的音频/视频
+HTML5 Audio/Video 属性
+属性	描述
+audioTracks	返回表示可用音轨的 AudioTrackList 对象
+autoplay	设置或返回是否在加载完成后随即播放音频/视频
+buffered	返回表示音频/视频已缓冲部分的 TimeRanges 对象
+controller	返回表示音频/视频当前媒体控制器的 MediaController 对象
+controls	设置或返回音频/视频是否显示控件（比如播放/暂停等）
+crossOrigin	设置或返回音频/视频的 CORS 设置
+currentSrc	返回当前音频/视频的 URL
+currentTime	设置或返回音频/视频中的当前播放位置（以秒计）
+defaultMuted	设置或返回音频/视频默认是否静音
+defaultPlaybackRate	设置或返回音频/视频的默认播放速度
+duration	返回当前音频/视频的长度（以秒计）
+ended	返回音频/视频的播放是否已结束
+error	返回表示音频/视频错误状态的 MediaError 对象
+loop	设置或返回音频/视频是否应在结束时重新播放
+mediaGroup	设置或返回音频/视频所属的组合（用于连接多个音频/视频元素）
+muted	设置或返回音频/视频是否静音
+networkState	返回音频/视频的当前网络状态
+paused	设置或返回音频/视频是否暂停
+playbackRate	设置或返回音频/视频播放的速度
+played	返回表示音频/视频已播放部分的 TimeRanges 对象
+preload	设置或返回音频/视频是否应该在页面加载后进行加载
+readyState	返回音频/视频当前的就绪状态
+seekable	返回表示音频/视频可寻址部分的 TimeRanges 对象
+seeking	返回用户是否正在音频/视频中进行查找
+src	设置或返回音频/视频元素的当前来源
+startDate	返回表示当前时间偏移的 Date 对象
+textTracks	返回表示可用文本轨道的 TextTrackList 对象
+videoTracks	返回表示可用视频轨道的 VideoTrackList 对象
+volume	设置或返回音频/视频的音量
+HTML5 Audio/Video 事件
+事件	描述
+abort	当音频/视频的加载已放弃时
+canplay	当浏览器可以播放音频/视频时
+canplaythrough	当浏览器可在不因缓冲而停顿的情况下进行播放时
+durationchange	当音频/视频的时长已更改时
+emptied	当目前的播放列表为空时
+ended	当目前的播放列表已结束时
+error	当在音频/视频加载期间发生错误时
+loadeddata	当浏览器已加载音频/视频的当前帧时
+loadedmetadata	当浏览器已加载音频/视频的元数据时
+loadstart	当浏览器开始查找音频/视频时
+pause	当音频/视频已暂停时
+play	当音频/视频已开始或不再暂停时
+playing	当音频/视频在已因缓冲而暂停或停止后已就绪时
+progress	当浏览器正在下载音频/视频时
+ratechange	当音频/视频的播放速度已更改时
+seeked	当用户已移动/跳跃到音频/视频中的新位置时
+seeking	当用户开始移动/跳跃到音频/视频中的新位置时
+stalled	当浏览器尝试获取媒体数据，但数据不可用时
+suspend	当浏览器刻意不获取媒体数据时
+timeupdate	当目前的播放位置已更改时
+volumechange	当音量已更改时
+waiting	当视频由于需要缓冲下一帧而停止
+
+
+
+HTML 5 Canvas 参考手册
+
+描述
+HTML5 <canvas> 标签用于绘制图像（通过脚本，通常是 JavaScript）。
+
+不过，<canvas> 元素本身并没有绘制能力（它仅仅是图形的容器） - 您必须使用脚本来完成实际的绘图任务。
+
+getContext() 方法可返回一个对象，该对象提供了用于在画布上绘图的方法和属性。
+
+本手册提供完整的 getContext("2d") 对象属性和方法，可用于在画布上绘制文本、线条、矩形、圆形等等。
+
+浏览器支持
+Internet Explorer 9、Firefox、Opera、Chrome 以及 Safari 支持 <canvas> 及其属性和方法。
+
+注释：Internet Explorer 8 以及更早的版本不支持 <canvas> 元素。
+
+颜色、样式和阴影
+属性	描述
+fillStyle	设置或返回用于填充绘画的颜色、渐变或模式
+strokeStyle	设置或返回用于笔触的颜色、渐变或模式
+shadowColor	设置或返回用于阴影的颜色
+shadowBlur	设置或返回用于阴影的模糊级别
+shadowOffsetX	设置或返回阴影距形状的水平距离
+shadowOffsetY	设置或返回阴影距形状的垂直距离
+方法	描述
+createLinearGradient()	创建线性渐变（用在画布内容上）
+createPattern()	在指定的方向上重复指定的元素
+createRadialGradient()	创建放射状/环形的渐变（用在画布内容上）
+addColorStop()	规定渐变对象中的颜色和停止位置
+线条样式
+属性	描述
+lineCap	设置或返回线条的结束端点样式
+lineJoin	设置或返回两条线相交时，所创建的拐角类型
+lineWidth	设置或返回当前的线条宽度
+miterLimit	设置或返回最大斜接长度
+矩形
+方法	描述
+rect()	创建矩形
+fillRect()	绘制“被填充”的矩形
+strokeRect()	绘制矩形（无填充）
+clearRect()	在给定的矩形内清除指定的像素
+路径
+方法	描述
+fill()	填充当前绘图（路径）
+stroke()	绘制已定义的路径
+beginPath()	起始一条路径，或重置当前路径
+moveTo()	把路径移动到画布中的指定点，不创建线条
+closePath()	创建从当前点回到起始点的路径
+lineTo()	添加一个新点，然后在画布中创建从该点到最后指定点的线条
+clip()	从原始画布剪切任意形状和尺寸的区域
+quadraticCurveTo()	创建二次贝塞尔曲线
+bezierCurveTo()	创建三次方贝塞尔曲线
+arc()	创建弧/曲线（用于创建圆形或部分圆）
+arcTo()	创建两切线之间的弧/曲线
+isPointInPath()	如果指定的点位于当前路径中，则返回 true，否则返回 false
+转换
+方法	描述
+scale()	缩放当前绘图至更大或更小
+rotate()	旋转当前绘图
+translate()	重新映射画布上的 (0,0) 位置
+transform()	替换绘图的当前转换矩阵
+setTransform()	将当前转换重置为单位矩阵。然后运行 transform()
+文本
+属性	描述
+font	设置或返回文本内容的当前字体属性
+textAlign	设置或返回文本内容的当前对齐方式
+textBaseline	设置或返回在绘制文本时使用的当前文本基线
+方法	描述
+fillText()	在画布上绘制“被填充的”文本
+strokeText()	在画布上绘制文本（无填充）
+measureText()	返回包含指定文本宽度的对象
+图像绘制
+方法	描述
+drawImage()	向画布上绘制图像、画布或视频
+像素操作
+属性	描述
+width	返回 ImageData 对象的宽度
+height	返回 ImageData 对象的高度
+data	返回一个对象，其包含指定的 ImageData 对象的图像数据
+方法	描述
+createImageData()	创建新的、空白的 ImageData 对象
+getImageData()	返回 ImageData 对象，该对象为画布上指定的矩形复制像素数据
+putImageData()	把图像数据（从指定的 ImageData 对象）放回画布上
+合成
+属性	描述
+globalAlpha	设置或返回绘图的当前 alpha 或透明值
+globalCompositeOperation	设置或返回新图像如何绘制到已有的图像上
+其他
+方法	描述
+save()	保存当前环境的状态
+restore()	返回之前保存过的路径状态和属性
+createEvent()	 
+getContext()	 
+toDataURL()	 
+
+
+
+HTML 元素和有效的 DTD
+
+HTML5/HTML 4.01/XHTML 元素和有效的 DTD
+下面的表格列出了所有的 HTML5/HTML 4.01/XHTML 元素，以及它们会出现在什么文档类型 (DTD) 中：
+
+标签	HTML5	HTML 4.01 / XHTML 1.0	XHTML 1.1
+Transitional	Strict	Frameset
+<a>	Yes	Yes	Yes	Yes	Yes
+<abbr>	Yes	Yes	Yes	Yes	Yes
+<acronym>	No	Yes	Yes	Yes	Yes
+<address>	Yes	Yes	Yes	Yes	Yes
+<applet>	No	Yes	No	Yes	No
+<area>	Yes	Yes	Yes	Yes	No
+<article>	Yes	No	No	No	No
+<aside>	Yes	No	No	No	No
+<audio>	Yes	No	No	No	No
+<b>	Yes	Yes	Yes	Yes	Yes
+<base>	Yes	Yes	Yes	Yes	Yes
+<basefont>	No	Yes	No	Yes	No
+<bdi>	Yes	No	No	No	No
+<bdo>	Yes	Yes	Yes	Yes	No
+<big>	No	Yes	Yes	Yes	Yes
+<blockquote>	Yes	Yes	Yes	Yes	Yes
+<body>	Yes	Yes	Yes	Yes	Yes
+<br>	Yes	Yes	Yes	Yes	Yes
+<button>	Yes	Yes	Yes	Yes	Yes
+<canvas>	Yes	No	No	No	No
+<caption>	Yes	Yes	Yes	Yes	Yes
+<center>	No	Yes	No	Yes	No
+<cite>	Yes	Yes	Yes	Yes	Yes
+<code>	Yes	Yes	Yes	Yes	Yes
+<col>	Yes	Yes	Yes	Yes	No
+<colgroup>	Yes	Yes	Yes	Yes	No
+<command>	Yes	No	No	No	No
+<datalist>	Yes	No	No	No	No
+<dd>	Yes	Yes	Yes	Yes	Yes
+<del>	Yes	Yes	Yes	Yes	No
+<details>	Yes	No	No	No	No
+<dfn>	Yes	Yes	Yes	Yes	Yes
+<dir>	No	Yes	No	Yes	No
+<div>	Yes	Yes	Yes	Yes	Yes
+<dl>	Yes	Yes	Yes	Yes	Yes
+<dt>	Yes	Yes	Yes	Yes	Yes
+<em>	Yes	Yes	Yes	Yes	Yes
+<embed>	Yes	No	No	No	No
+<fieldset>	Yes	Yes	Yes	Yes	Yes
+<figcaption>	Yes	No	No	No	No
+<figure>	Yes	No	No	No	No
+<font>	No	Yes	No	Yes	No
+<footer>	Yes	No	No	No	No
+<form>	Yes	Yes	Yes	Yes	Yes
+<frame>	No	No	No	Yes	No
+<frameset>	No	No	No	Yes	No
+<h1> to <h6>	Yes	Yes	Yes	Yes	Yes
+<head>	Yes	Yes	Yes	Yes	Yes
+<header>	Yes	No	No	No	No
+<hgroup>	Yes	No	No	No	No
+<hr>	Yes	Yes	Yes	Yes	Yes
+<html>	Yes	Yes	Yes	Yes	Yes
+<i>	Yes	Yes	Yes	Yes	Yes
+<iframe>	Yes	Yes	No	Yes	No
+<img>	Yes	Yes	Yes	Yes	Yes
+<input>	Yes	Yes	Yes	Yes	Yes
+<ins>	Yes	Yes	Yes	Yes	No
+<keygen>	Yes	No	No	No	No
+<kbd>	Yes	Yes	Yes	Yes	Yes
+<label>	Yes	Yes	Yes	Yes	Yes
+<legend>	Yes	Yes	Yes	Yes	Yes
+<li>	Yes	Yes	Yes	Yes	Yes
+<link>	Yes	Yes	Yes	Yes	Yes
+<map>	Yes	Yes	Yes	Yes	No
+<mark>	Yes	No	No	No	No
+<menu>	Yes	Yes	No	Yes	No
+<meta>	Yes	Yes	Yes	Yes	Yes
+<meter>	Yes	No	No	No	No
+<nav>	Yes	No	No	No	No
+<noframes>	No	Yes	No	Yes	No
+<noscript>	Yes	Yes	Yes	Yes	Yes
+<object>	Yes	Yes	Yes	Yes	Yes
+<ol>	Yes	Yes	Yes	Yes	Yes
+<optgroup>	Yes	Yes	Yes	Yes	Yes
+<option>	Yes	Yes	Yes	Yes	Yes
+<output>	Yes	No	No	No	No
+<p>	Yes	Yes	Yes	Yes	Yes
+<param>	Yes	Yes	Yes	Yes	Yes
+<pre>	Yes	Yes	Yes	Yes	Yes
+<progress>	Yes	No	No	No	No
+<q>	Yes	Yes	Yes	Yes	Yes
+<rp>	Yes	No	No	No	No
+<rt>	Yes	No	No	No	No
+<ruby>	Yes	No	No	No	No
+<s>	Yes	Yes	No	Yes	No
+<samp>	Yes	Yes	Yes	Yes	Yes
+<script>	Yes	Yes	Yes	Yes	Yes
+<section>	Yes	No	No	No	No
+<select>	Yes	Yes	Yes	Yes	Yes
+<small>	Yes	Yes	Yes	Yes	Yes
+<source>	Yes	No	No	No	No
+<span>	Yes	Yes	Yes	Yes	Yes
+<strike>	No	Yes	No	Yes	No
+<strong>	Yes	Yes	Yes	Yes	Yes
+<style>	Yes	Yes	Yes	Yes	Yes
+<sub>	Yes	Yes	Yes	Yes	Yes
+<summary>	Yes	No	No	No	No
+<sup>	Yes	Yes	Yes	Yes	Yes
+<table>	Yes	Yes	Yes	Yes	Yes
+<tbody>	Yes	Yes	Yes	Yes	No
+<td>	Yes	Yes	Yes	Yes	Yes
+<textarea>	Yes	Yes	Yes	Yes	Yes
+<tfoot>	Yes	Yes	Yes	Yes	No
+<th>	Yes	Yes	Yes	Yes	Yes
+<thead>	Yes	Yes	Yes	Yes	No
+<time>	Yes	No	No	No	No
+<title>	Yes	Yes	Yes	Yes	Yes
+<tr>	Yes	Yes	Yes	Yes	Yes
+<track>	Yes	No	No	No	No
+<tt>	No	Yes	Yes	Yes	Yes
+<u>	No	Yes	No	Yes	No
+<ul>	Yes	Yes	Yes	Yes	Yes
+<var>	Yes	Yes	Yes	Yes	Yes
+<video>	Yes	No	No	No	No
+<wbr>	Yes	No	No	No	No
